@@ -52,7 +52,7 @@ developing applications that use %{name}.
 
 
 %build
-%cmake_kf6 -DKDE_INSTALL_LIBEXECDIR=%{_kf6_libexecdir}
+%cmake_kf6
 %cmake_build
 
 %install
@@ -73,7 +73,7 @@ developing applications that use %{name}.
 %dir %{_qt6_plugindir}/kf6/kfileitemaction/
 %{_qt6_plugindir}/kf6/kfileitemaction/sharefileitemaction.so
 %{_kf6_qmldir}/org/kde/purpose/
-%{_kf6_datadir}/purpose/
+%{_kf6_datadir}/kf6/purpose/
 %{_kf6_libexecdir}/purposeprocess
 %{_datadir}/icons/hicolor/*/apps/*-purpose6.*
 
