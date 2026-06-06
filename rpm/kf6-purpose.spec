@@ -68,8 +68,7 @@ developing applications that use %{name}.
 %dir %{_qt6_plugindir}/kf6/kfileitemaction/
 %{_qt6_plugindir}/kf6/kfileitemaction/sharefileitemaction.so
 %{_kf6_qmldir}/org/kde/purpose/
-%{_qt6_datadir}/icons/hicolor/*/apps/*-purpose.*
-#{_datadir}/icons/hicolor/*/actions/google-youtube.*
+%{_qt6_datadir}/icons/hicolor/*/apps/*-purpose6.*
 
 %files devel
 %{_kf6_libdir}/libKF6Purpose.so
