@@ -73,7 +73,6 @@ developing applications that use %{name}.
 %files devel
 %{_kf6_libdir}/libKF6Purpose.so
 %{_kf6_libdir}/libKF6PurposeWidgets.so
-%{_kf6_includedir}/KF6/purpose/
-%{_kf6_includedir}/KF6/purposewidgets/
-%{_kf6_libdir}/cmake/KDEExperimentalPurpose/
+%{_kf6_includedir}/purpose/
+%{_kf6_includedir}/purposewidgets/
 %{_kf6_libdir}/cmake/KF6Purpose/
