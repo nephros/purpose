@@ -8,14 +8,14 @@ Release: 1%{?dist}
 
 License: GPLv2 or GPLv3
 URL:     https://invent.kde.org/frameworks/%{framework}
-Source0:        %{name}-%{version}.tar.bz2
 
-BuildRequires:  kf6-extra-cmake-modules >= %{kf6_version}
-BuildRequires:  kf6-rpm-macros
-#BuildRequires:  gettext
-#BuildRequires:  intltool
+Source0: %{name}-%{version}.tar.bz2
+
+BuildRequires: kf6-extra-cmake-modules >= %{kf6_version}
+BuildRequires: kf6-rpm-macros
 
 BuildRequires: kf6-rpm-macros
+
 BuildRequires: qt6-qtbase-devel
 BuildRequires: qt6-qttools-devel
 BuildRequires: qt6-qtdeclarative-devel
@@ -24,7 +24,7 @@ BuildRequires: kf6-kconfig-devel >= %{kf6_version}
 BuildRequires: kf6-kcoreaddons-devel >= %{kf6_version}
 BuildRequires: kf6-ki18n-devel >= %{kf6_version}
 BuildRequires: kf6-kio-devel >= %{kf6_version}
-BuildRequires: kf6-kirigami2-devel >= %{kf6_version}
+BuildRequires: kf6-kirigami-devel >= %{kf6_version}
 BuildRequires: kf6-knotifications-devel >= %{kf6_version}
 
 %description
@@ -39,10 +39,12 @@ Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 #Requires:       cmake(KF6CoreAddons)
 %description    devel
-%{summary}.
+The %{name}-devel package contains libraries and header files for
+developing applications that use %{name}.
 
 %prep
 %autosetup -n %{name}-%{version}/upstream -p1
+
 
 %build
 %cmake_kf6 -DKDE_INSTALL_LIBEXECDIR=%{kf6_libexecdir}
