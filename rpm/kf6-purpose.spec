@@ -64,12 +64,11 @@ developing applications that use %{name}.
 %{_kf6_datadir}/qlogging-categories6/purpose.*
 %{_kf6_libdir}/libKF6Purpose.so.*
 %{_kf6_libdir}/libKF6PurposeWidgets.so.*
-%{_kf6_datadir}/purpose/
-%{_opt_qt5_plugindir}/kf6/purpose/
-%dir %{_opt_qt5_plugindir}/kf6/kfileitemaction/
-%{_opt_qt5_plugindir}/kf6/kfileitemaction/sharefileitemaction.so
+%{_qt6_plugindir}/kf6/purpose/
+%dir %{_qt6_plugindir}/kf6/kfileitemaction/
+%{_qt6_plugindir}/kf6/kfileitemaction/sharefileitemaction.so
 %{_kf6_qmldir}/org/kde/purpose/
-%{_opt_qt5_datadir}/icons/hicolor/*/apps/*-purpose.*
+%{_qt6_datadir}/icons/hicolor/*/apps/*-purpose.*
 #{_datadir}/icons/hicolor/*/actions/google-youtube.*
 
 %files devel
