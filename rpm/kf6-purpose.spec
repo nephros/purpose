@@ -53,7 +53,7 @@ developing applications that use %{name}.
 %install
 %cmake_install
 
-%find_lang_kf6 %{name}
+%find_lang %{name} --all-name
 
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
