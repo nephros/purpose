@@ -64,9 +64,6 @@ developing applications that use %{name}.
 %{_kf6_datadir}/qlogging-categories6/purpose.*
 %{_kf6_libdir}/libKF6Purpose.so.*
 %{_kf6_libdir}/libKF6PurposeWidgets.so.*
-%{_kf6_libdir}/libPhabricatorHelpers.so.*
-%{_kf6_libdir}/libReviewboardHelpers.so.*
-%{_kf6_libexecdir}/kf6/purposeprocess
 %{_kf6_datadir}/purpose/
 %{_opt_qt5_plugindir}/kf6/purpose/
 %dir %{_opt_qt5_plugindir}/kf6/kfileitemaction/
