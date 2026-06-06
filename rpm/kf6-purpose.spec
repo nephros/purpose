@@ -14,8 +14,6 @@ Source0: %{name}-%{version}.tar.bz2
 BuildRequires: kf6-extra-cmake-modules >= %{kf6_version}
 BuildRequires: kf6-rpm-macros
 
-BuildRequires: kf6-rpm-macros
-
 BuildRequires: qt6-qtbase-devel
 BuildRequires: qt6-qttools-devel
 BuildRequires: qt6-qtdeclarative-devel
