@@ -51,15 +51,15 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 %install
 %cmake_install
 
-%find_lang %{name} --all-name
+%find_lang_kf6 %{name}
 
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
-%files
+%files -f %{name}.lang
 %doc README.md
 %license LICENSES/*.txt
-%{_kf6_datadir}/qlogging-categories5/purpose.*
+%{_kf6_datadir}/qlogging-categories6/purpose.*
 %{_kf6_libdir}/libKF6Purpose.so.*
 %{_kf6_libdir}/libKF6PurposeWidgets.so.*
 %{_kf6_libdir}/libPhabricatorHelpers.so.*
